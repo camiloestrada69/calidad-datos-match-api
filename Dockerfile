@@ -27,6 +27,6 @@ RUN file1="$(ls -1 /usr/src/app/)" && echo $file1
 
 COPY --from=development /usr/src/app/dist/ ./dist
 
-EXPOSE 5000
+EXPOSE 80
 
 CMD ["npm", "run", "start:prod"]
