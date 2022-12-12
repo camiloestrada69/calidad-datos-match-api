@@ -16,4 +16,4 @@ spec:
         - name: camiloestradacalidaddatosmatchapi 
           image: crcalidad.azurecr.io/camiloestradacalidaddatosmatchapi
           ports:
-          - containerPort: 3000
+          - containerPort: 80
