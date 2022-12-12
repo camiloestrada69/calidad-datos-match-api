@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: camiloestradacalidaddatosmatchapi 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: camiloestradacalidaddatosmatchapi
+  template:
+    metadata:
+      labels:
+        app: camiloestradacalidaddatosmatchapi 
+    spec:
+      containers:
+        - name: camiloestradacalidaddatosmatchapi 
+          image: crcalidad.azurecr.io/camiloestradacalidaddatosmatchapi
+          ports:
+          - containerPort: 5000
